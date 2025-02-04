@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Day of life</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;700;800&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- filles css -->
+    <!-- fille fontawesome css -->
+    <link rel="stylesheet" href="assets/css/all.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,6 +14,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fille animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- fille bootstrap css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- fille Normalize css -->
+     <link rel="stylesheet" href="assets/css/Normalize.css">
+     <!-- fille FrameWork css -->
+      <link rel="stylesheet" href="assets/css/frameWork-style.css">
+    <!-- fille font google  -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <!-- fille style css -->
+      <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <style>
     div,
@@ -26,10 +37,16 @@
     }
   </style>
   <body>
+    <img
+    src="assets/img/02.JPG"
+  alt="Cover Image"
+  style="object-fit: cover;"
+  class="img-cover position-absolute animate__animated animate__fadeIn w-100 h-100 position-absolute "
+/> 
     <!-- oncontextmenu="return false" -->
     <!--Start Events-->
     <div class="events" id="events">
-      <h1>بسم الله الرحمن الرحيم</h1>
+      <h1 class="p-0">بسم الله الرحمن الرحيم</h1>
       <h2 class="main-title">
         The day of life when life begins      </h2>
       <div class="dots dots-up"></div>
@@ -79,9 +96,9 @@
         </a> -->
       </div>
       <audio controls autoplay loop id="myAudio" class="myaudio">
-        <source src="saund/011.mp3" type="audio/mpeg" />
-        <source src="saund/011.mp3" type="audio/oog" />
-        <source src="saund/011.mp3" type="audio/wav" />
+        <source src="assets/saund/011.mp3" type="audio/mpeg" />
+        <source src="assets/saund/011.mp3" type="audio/oog" />
+        <source src="assets/saund/011.mp3" type="audio/wav" />
       </audio>
       <button class="btn" onclick="playAudio()">Play Sound</button>
     </div>
@@ -121,12 +138,27 @@
         <div class="line">
           <i class="fas fa-phone-volume fa-fw"></i>
           <div class="info">
-            <span>01140030046 </span>
             <span>+201014909047</span>
             <span>+201117607890</span>
           </div>
-      <p class="copyright">Made With : &lt; By 3ADEL_SW</p>
+        </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    
+            <!-- filles js -->
+    <!-- fille Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- link jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- fille fontawesome js -->
+  <!-- <script src="assets/js/all.js"></script> -->
+  <!-- fille bootstrap js -->
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+  <!-- fille script js -->
+  <script src="assets/js/script.js"></script>
+    <!-- fille fontawesome js -->
+    <!-- <script src="assets/js/all.js"></script> -->
+
+
+</body>
 </html>
