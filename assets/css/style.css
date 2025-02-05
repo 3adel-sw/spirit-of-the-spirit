@@ -247,7 +247,7 @@ h1 {
   color: black;
   cursor: pointer;
   font-weight: bold;
-  padding: 15px;
+  padding-bottom: 25px;
 }
 .events .description:hover {
   color: var(--main-color);
