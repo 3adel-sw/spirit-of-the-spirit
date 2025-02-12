@@ -1,12 +1,12 @@
 // The End Of The Year Date To Countdown To
 // 1000 Milliseconds = 1 Second
 
-//let countDownDate = new Date("nov 1 , 2025 00:00:00").getTime();
+let countDownDate = new Date("nov 1 , 2025 00:00:00").getTime();
 // console.log(countDownDate);
 
 let counter = setInterval(() => {
   // Get Date Now
-//  let dateNow = new Date().getTime();
+  let dateNow = new Date().getTime();
 
   // Find The Date Difference Between Now And Countdown Date
   let dateDiff = countDownDate - dateNow;
