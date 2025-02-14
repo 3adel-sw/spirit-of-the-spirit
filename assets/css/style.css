@@ -429,7 +429,7 @@ a {
 }
 @media (max-width: 480px) {
   .img-cover {
-    object-fit: inherit;
+   object-fit: cover;
   }
 }
 .footer .box .line i {
