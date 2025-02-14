@@ -344,12 +344,12 @@ a {
   top: 120px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .footer {
     text-align: center;
     top: 120px;
   }
-}
+} */
 
 .footer .container {
   display: grid;
