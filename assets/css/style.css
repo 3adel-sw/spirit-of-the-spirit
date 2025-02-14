@@ -341,7 +341,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 120px;
+  top: 110px;
 }
 
 /* @media (max-width: 480px) {
