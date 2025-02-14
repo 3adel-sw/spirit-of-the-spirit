@@ -343,6 +343,7 @@ a {
 @media (max-width: 480px) {
   .footer {
     text-align: center;
+    top: 160px;
   }
 }
 
