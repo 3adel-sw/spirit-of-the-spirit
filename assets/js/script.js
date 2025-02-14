@@ -13,11 +13,16 @@ let counter = setInterval(() => {
 
   // Get Time Units
   // let days = dateDiff / 1000 / 60 / 60 / 24;
+  let friday = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 7));
+  let thursday = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 7));
   let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = (dateDiff % (1000 * 60 * 60)) / (1000 * 60);
   let seconds = (dateDiff % (1000 * 60)) / 1000;
 
+  // Display The Time
+  document.querySelector(".thursday").innerHTML = Math.floor(thursday);
+  document.querySelector(".friday").innerHTML = Math.floor(friday);
   document.querySelector(".days").innerHTML =
     Math.floor(days) < 10 ? `0${days}` : days;
   document.querySelector(".hours").innerHTML =
@@ -30,7 +35,7 @@ let counter = setInterval(() => {
 let eventsPage = document.querySelector(".events");
 
 // Get Array of imgs
-let imgsArray = ["02.JPG", "02.JPG"]; //
+let imgsArray = ["02.JPG"]; //
 
 // landingPage.style.backgroundImage = `url(./imgs/${
 //   imgsArray[Math.floor(Math.random() * imgsArray.length)]

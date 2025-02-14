@@ -44,6 +44,11 @@ a {
   --moz-box-sizing: border-box;
   --box-sizing: border-box;
 }
+p,
+span,
+h2 {
+  line-height: 1.7;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -74,28 +79,6 @@ a {
   border-radius: 6px;
   text-align: center;
 }
-/* .main-title::before {
-  content: "";
-  width: 12px;
-  height: 20px;
-  background-color: var(--main-color);
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 62%;
-} */
-/* .main-title::after {
-  content: "";
-  width: 12px;
-  height: 20px;
-  background-color: var(--main-color);
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 62%;
-} */
 .main-title::before {
   left: -30px;
 }
@@ -203,7 +186,7 @@ h1 {
 .events .info .time .unit span:first-child {
   font-size: 35px;
   padding: 15px;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 .events .info .time .unit span:last-child {
@@ -229,10 +212,10 @@ h1 {
 .events .title {
   text-align: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 22px;
   cursor: pointer;
   font-weight: bold;
-  line-height: 0.4;
+  line-height: 1;
   display: block;
 }
 .events .title:hover {
@@ -351,6 +334,8 @@ a {
 /*End Animation*/
 /*start footer*/
 .footer {
+  margin-top: 20px;
+  padding-top: 10px;
   background-color: #191919;
   width: 100%;
   height: 55px;
@@ -443,10 +428,7 @@ a {
   flex-wrap: nowrap;
   /* margin-bottom: 30px; */
 }
-@media (max-width: 320px) {
-  .footer .box .line {
-    /* flex-direction: column; */
-  }
+@media (max-width: 480px) {
   .img-cover {
     object-fit: inherit;
   }
