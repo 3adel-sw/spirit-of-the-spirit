@@ -347,6 +347,7 @@ a {
 @media (max-width: 480px) {
   .footer {
     text-align: center;
+    top: 160px;
   }
 }
 
@@ -426,11 +427,6 @@ a {
   /* margin-bottom: 30px; */
   flex-wrap: nowrap;
   /* margin-bottom: 30px; */
-}
-@media (max-width: 480px) {
-  .img-cover {
-   object-fit: cover;
-  }
 }
 .footer .box .line i {
   font-size: 25px;
