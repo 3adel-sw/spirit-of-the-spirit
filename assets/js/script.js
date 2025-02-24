@@ -13,6 +13,8 @@ let counter = setInterval(() => {
 
   // Get Time Units
   // let days = dateDiff / 1000 / 60 / 60 / 24;
+  let year = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365));
+  let month = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 30));
   let friday = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 7));
   let thursday = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 7));
   let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
@@ -21,6 +23,8 @@ let counter = setInterval(() => {
   let seconds = (dateDiff % (1000 * 60)) / 1000;
 
   // Display The Time
+  document.querySelector(".year").innerHTML = Math.floor(year);
+  document.querySelector(".month").innerHTML = Math.floor(month);
   document.querySelector(".thursday").innerHTML = Math.floor(thursday);
   document.querySelector(".friday").innerHTML = Math.floor(friday);
   document.querySelector(".days").innerHTML =
