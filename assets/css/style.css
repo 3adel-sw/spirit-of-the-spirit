@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  ckground-size: 100% 92%;
+  /* ckground-size: 100% 92%; */
 }
 .img-cover {
   top: 0;
@@ -268,7 +268,7 @@ a {
   background-color: rgb(0, 0, 0);
   color: white;
   font-size: 10px;
-  top: 60%;
+  top: 80%;
 }
 .fa-solid {
   z-index: 11;
@@ -334,22 +334,22 @@ a {
 /*End Animation*/
 /*start footer*/
 .footer {
-  margin-top: 20px;
-  padding-top: 10px;
+  margin-top: 19px;
   background-color: #191919;
   width: 100%;
   height: 55px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 110px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .footer {
     text-align: center;
+    top: 120px;
   }
-}
+} */
 
 .footer .container {
   display: grid;
@@ -427,11 +427,6 @@ a {
   /* margin-bottom: 30px; */
   flex-wrap: nowrap;
   /* margin-bottom: 30px; */
-}
-@media (max-width: 480px) {
-  .img-cover {
-    object-fit: inherit;
-  }
 }
 .footer .box .line i {
   font-size: 25px;
